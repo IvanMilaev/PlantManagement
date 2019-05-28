@@ -11,16 +11,12 @@
 #include <iostream>
 #include <stdio.h>
 
-enum class Sex {
-    MALE,
-    FEMALE,
-    HARDCORE
-};
 
 class Person
 {
 public:
-    Person(std::string firstName, std::string lastName, int sex, int age); // constructor
+    Person(std::string first_name, std::string last_name, int s, int a); // constructor
+    Person(std::string first_name, int a);
     std::string firstName;
     std::string lastName;
     int sex;
@@ -31,15 +27,5 @@ public:
     void display();
 };
 
-//class Employee
-//{
-//public:
-//    std::string name;       // имя
-//    int age;                // возраст
-//    std::string company;    // компания
-//    void display()
-//    {
-//        std::cout << "Name: " << name << "\tAge: " << age << std::endl;
-//    }
-//};
+
 #endif /* Person_hpp */

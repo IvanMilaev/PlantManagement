@@ -15,18 +15,19 @@
 class Chief : public Person
 {
 public:
-    Chief(std::string firstName,
-          std::string lastName,
-          int sex, int age); // constructor
+    Chief(std::string first_name,
+          std::string last_name,
+          int s, int a); // constructor
     std::string company;
     std::string workPhone;
     std::string email;
     
-    void addEmployee(Employee employee);
+    void addEmployee(Employee *employee);
     float costOfEquipments();
     float costOfProducts();
     void display();
+    void displayEmployeesList(); 
 private:
-    std::vector<Employee> employees;
+    std::vector<Employee*> employees;
 };
 #endif /* Chief_hpp */

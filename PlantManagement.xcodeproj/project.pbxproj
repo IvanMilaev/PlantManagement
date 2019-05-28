@@ -11,6 +11,9 @@
 		9824274E229C6BEC00FDEF81 /* Person.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98242748229C6BEC00FDEF81 /* Person.cpp */; };
 		9824274F229C6BEC00FDEF81 /* Chief.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98242749229C6BEC00FDEF81 /* Chief.cpp */; };
 		98242750229C6BEC00FDEF81 /* Employee.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9824274D229C6BEC00FDEF81 /* Employee.cpp */; };
+		98EFB4B2229D86BA00A3AB90 /* Profession.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98EFB4B0229D86BA00A3AB90 /* Profession.cpp */; };
+		98EFB4B5229D872000A3AB90 /* Product.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98EFB4B3229D872000A3AB90 /* Product.cpp */; };
+		98EFB4B8229D878400A3AB90 /* Equipment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98EFB4B6229D878400A3AB90 /* Equipment.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +37,12 @@
 		9824274B229C6BEC00FDEF81 /* Chief.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Chief.hpp; sourceTree = "<group>"; };
 		9824274C229C6BEC00FDEF81 /* Employee.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Employee.hpp; sourceTree = "<group>"; };
 		9824274D229C6BEC00FDEF81 /* Employee.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Employee.cpp; sourceTree = "<group>"; };
+		98EFB4B0229D86BA00A3AB90 /* Profession.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Profession.cpp; sourceTree = "<group>"; };
+		98EFB4B1229D86BA00A3AB90 /* Profession.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Profession.hpp; sourceTree = "<group>"; };
+		98EFB4B3229D872000A3AB90 /* Product.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Product.cpp; sourceTree = "<group>"; };
+		98EFB4B4229D872000A3AB90 /* Product.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Product.hpp; sourceTree = "<group>"; };
+		98EFB4B6229D878400A3AB90 /* Equipment.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Equipment.cpp; sourceTree = "<group>"; };
+		98EFB4B7229D878400A3AB90 /* Equipment.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Equipment.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +82,12 @@
 				98242748229C6BEC00FDEF81 /* Person.cpp */,
 				9824274A229C6BEC00FDEF81 /* Person.hpp */,
 				98242741229C6BA800FDEF81 /* main.cpp */,
+				98EFB4B0229D86BA00A3AB90 /* Profession.cpp */,
+				98EFB4B1229D86BA00A3AB90 /* Profession.hpp */,
+				98EFB4B3229D872000A3AB90 /* Product.cpp */,
+				98EFB4B4229D872000A3AB90 /* Product.hpp */,
+				98EFB4B6229D878400A3AB90 /* Equipment.cpp */,
+				98EFB4B7229D878400A3AB90 /* Equipment.hpp */,
 			);
 			path = PlantManagement;
 			sourceTree = "<group>";
@@ -133,10 +148,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98EFB4B2229D86BA00A3AB90 /* Profession.cpp in Sources */,
+				98EFB4B5229D872000A3AB90 /* Product.cpp in Sources */,
 				9824274E229C6BEC00FDEF81 /* Person.cpp in Sources */,
 				98242750229C6BEC00FDEF81 /* Employee.cpp in Sources */,
 				9824274F229C6BEC00FDEF81 /* Chief.cpp in Sources */,
 				98242742229C6BA800FDEF81 /* main.cpp in Sources */,
+				98EFB4B8229D878400A3AB90 /* Equipment.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

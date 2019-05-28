@@ -8,27 +8,20 @@
 
 #include "Employee.hpp"
 
-void Product :: display()
-{
-    std::cout << "Product: " << vendor << " "<< name << " " << costCoef << std::endl;
-}
 
-void Equipment :: display()
+Employee :: Employee(std::string first_name,
+                     std::string last_name,
+                     int s, int a,
+                     std::string compny,
+                     Profession *prof,
+                     int exp
+                     ):Person(first_name, last_name, s, a)
 {
-    std::cout << "Equipment : "<< name << " "<< condition << " " << cost << std::endl;
-}
-
-Employee :: Employee(std::string firstName,
-                     std::string lastName,
-                     int sex, int age,
-                     std::string company,
-                     Profession *profession,
-                     int experience
-                     ):Person(firstName, lastName, sex, age)
-{
-    company = company;
-    experience = experience;
-    profession = profession;
+    company = compny;
+    experience = exp;
+    profession = prof;
+    std::cout << "Creating employee... " << std::endl;
+    display();
     
 }
 
@@ -38,7 +31,10 @@ void Employee :: display()
     << " Profession: " << profession->name
     << " age: " << std::to_string(age)
     << " phone: " << phone
+    << " experiance: " << experience
+    << "\n"
     << std::endl;
+    
 }
 
 float Employee :: productsCost()
@@ -51,7 +47,7 @@ float Employee :: productsCost()
 float Employee :: equipmentsCost()
 {
     float cost = 0.0;
-    for(Equipment equip : equipments) cost+= equip.cost;
+    for(Equipment *equip : equipments) cost+= equip->cost;
     return cost;
 }
 
@@ -63,10 +59,7 @@ float Employee :: seeSalary()
 
 void  Employee :: makeProduct(std::string vendor, std::string name, float costCoef)
 {
-    Product product;
-    product.vendor = vendor;
-    product.name = name;
-    product.costCoef = costCoef;
+    Product product(vendor, name, costCoef);
     products.push_back(product);
     display();
     std::cout << "maked product: " << std::endl;
@@ -75,7 +68,7 @@ void  Employee :: makeProduct(std::string vendor, std::string name, float costCo
 
 void Employee :: pickEquipment(Equipment *equipment)
 {
-    equipments.push_back(*equipment);
+    equipments.push_back(equipment);
     display();
     std::cout << "picked equipment: " << std::endl;
     equipment->display();
@@ -88,5 +81,5 @@ void Employee :: displayProductsList()
 
 void Employee :: displayEquipmentsList()
 {
-    for(Equipment equip : equipments) equip.display();
+    for(Equipment *equip : equipments) equip->display();
 }
